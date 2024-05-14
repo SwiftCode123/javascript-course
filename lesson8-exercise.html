@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+   </head>
+   <body>
+    <script>
+        const product1 = 
+        {
+            type: 'Walmart-basketball',
+            price: 2905,
+            'delivery-value': '3-days'
+        };
+
+        const product2 = 
+        {
+            type: 'Target-basketball',
+            price: 3000
+        };
+
+        console.log(product1);
+
+        console.log(product1);
+
+        function comparePrice(product1, product2)
+        {
+            if (product1.price > product2.price)
+            {
+                return product2.type;
+            }
+            else
+            {
+                return product1.type;
+            }
+        }
+
+        console.log(comparePrice(product1, product2));
+
+        function isSameProduct(product1, product2)
+        {
+            if ((product1.type === product2.type) && (product1.price === product2.price))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        console.log(isSameProduct(product1, product2));
+        
+        const str = 'HELLO';
+        console.log(str.toLowerCase());
+    </script>
+   </body> 
+</html>

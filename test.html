@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    </body>
+    <script>
+        function convertToFahrenheit(celsius)
+        {
+            return (celsius * 9 / 5) + 32;
+        }
+        
+        function convertToCelsius(fahrenheit)
+        {
+            return (fahrenheit - 32) * 5 / 9;
+        }
+
+        function convertTemperature(number, string)
+        {
+            if (string === 'C')
+            {
+                console.log(convertToFahrenheit(number) + 'F');
+            }
+            else if (string === 'F')
+            {
+                console.log(convertToCelsius(number) + 'C');
+            }
+        }
+    </script>
+</html>
